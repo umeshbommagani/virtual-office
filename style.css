@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Rubrik',sans-serif;
+    font-family: 'Rubik',sans-serif;
     background-color: #fff;
     color: #f71515;
 }
@@ -207,4 +207,179 @@ body{
     transform: translateY(-6px);
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   }
+    .service-box {
+    background-color: #ffffff;
+    border-left: 5px solid #338f82;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center content */
+  }
+
+  .service-box img.service-image {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
   
+   .why-madhapur {
+    padding: 40px 60px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+
+  .why-madhapur h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .why-madhapur p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .why-madhapur ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .why-madhapur ul li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  /* ✅ Responsive Adjustments */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .text,
+  .images {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .text h1 {
+    font-size: 36px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .images img {
+    max-height: none;
+  }
+
+  .serve {
+    padding: 40px 30px;
+  }
+
+  .why-madhapur {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .dropdown-content {
+    min-width: 160px;
+  }
+
+  .service-box h2 {
+    font-size: 18px;
+  }
+
+  .service-box p {
+    font-size: 14px;
+  }
+
+  .why-madhapur h1 {
+    font-size: 26px;
+  }
+
+  .why-madhapur p,
+  .why-madhapur ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+  }
+
+  .service-box img.service-image {
+    max-height: 120px;
+  }
+
+  .serve .t1 h1,
+  .why-madhapur h1 {
+    font-size: 22px;
+  }
+
+  .serve .t1 p,
+  .service-box p,
+  .why-madhapur p,
+  .why-madhapur ul li {
+    font-size: 13px;
+  }
+}
