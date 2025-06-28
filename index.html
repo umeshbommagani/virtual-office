@@ -11,6 +11,11 @@
 <body>
     <nav class="navbar">
         <div class="logo">R CUBE CO-WORKING SPACE</div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-links">
             <li class="dropdown">
                 <button class="dropbtn">Locations</button>
@@ -40,6 +45,14 @@
 
         </ul>
     </nav>    
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+    </script>
     <section class="main">
         <div class="text">
             <h1>Why <span>R CUBE</span>?</h1>
